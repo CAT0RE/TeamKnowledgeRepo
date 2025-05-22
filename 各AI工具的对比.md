@@ -1,7 +1,7 @@
 ## Dify
 
 **Dify** 是一款开源的大语言模型(LLM) 应用开发平台。它融合了后端即服务（Backend as Service）和 [LLMOps](https://docs.dify.ai/zh-hans/learn-more/extended-reading/what-is-llmops) 的理念，使开发者可以快速搭建生产级的生成式 AI 应用。即使非技术人员，也能参与到 AI 应用的定义和数据运营过程中。
-![[Pasted image 20250310132413.png]]
+![Dify平台概览](./images/Pasted%20image%2020250310132413.png)
 
 
 由于 Dify 内置了构建 LLM 应用所需的关键技术栈，包括对数百个模型的支持、直观的 Prompt 编排界面、高质量的 RAG 引擎、稳健的 Agent 框架、灵活的流程编排，并同时提供了一套易用的界面和 API。这为开发者节省了许多重复造轮子的时间，使其可以专注在创新和业务需求上。
@@ -21,12 +21,12 @@ title: 提示词工程（Prompt Engineering）
 
 - **思维链提示（Chain-of-Thought Prompting）：** 这是一种技术，通过提示语言模型生成一系列中间步骤，以提高其推理能力，特别是在处理多步骤问题时。
     
-- **提示链接（Prompt Chaining）：** 在对话式AI中，使用一个提示的输出作为下一个提示的输入，创建更具动态性和上下文感知的聊天机器人。
+- **提示链接（Prompt Chaining）：** 在对话式AI中，使用一个提示的输出作为下一个提示的输入，创建更有动态性和上下文感知的聊天机器人。
     
 - **文本到图像生成：** 通过设计特定的文本提示，引导模型生成对应的图像，如DALL-E、Stable Diffusion等模型的应用。
 
 而所谓的**Agent**，也就是用Prompt的方式来指导大模型成为一个专门的角色并且以特定的方式工作，以下是通过Prompt Engineering的方式训练一个旅游助手Agent的例子：
-![[Pasted image 20250310140729.png]]
+![旅游助手Agent示例](./images/Pasted%20image%2020250310140729.png)
 ```
 
 ```ad-note
@@ -55,7 +55,7 @@ title: RAG（检索增强生成Retrieval-Augmented Generation）
 通过这种方式，RAG知识库使生成式模型能够动态地访问和利用用户自己文件中的内容进行答案生成。
 
 以下是一个典型的RAG索引生成回答的过程的示意图：
-![[Pasted image 20250310150523.png]]
+![RAG工作流程示意图](./images/Pasted%20image%2020250310150523.png)
 
 ```
 
@@ -71,11 +71,11 @@ MaxKB也是一个基于大模型的第三方二次开发的应用，主要定位
 
 MaxKB同样也是开源产品，如果想要试用可以直接访问其[Github仓库](https://github.com/1Panel-dev/MaxKB)下载安装部署，但是商业版/专业版需要付费使用。
 
-![[Pasted image 20250310151642.png]]
+![MaxKB界面](./images/Pasted%20image%2020250310151642.png)
 
 MaxKB能够比较方便地在应用内进行知识库的分段、清洗工作，在一定程度上能够解决大模型的幻觉问题。
 
-![[Pasted image 20250310152748.png]]
+![MaxKB知识库分段功能](./images/Pasted%20image%2020250310152748.png)
 
 ```ad-note
 title: 大模型的幻觉问题
@@ -85,11 +85,11 @@ title: 大模型的幻觉问题
 
 MaxKB包含工作过程编排功能，不同于以上所介绍的简单Agent编排，该功能可以理解为一个工作流，并且自带了很多函数组件，可以0代码构建一个成熟的工作流程，并且该工作流可以衔接到其他软件之中。
 
-![[Pasted image 20250310153358.png]]
+![MaxKB工作流编排功能](./images/Pasted%20image%2020250310153358.png)
 
 还能够自定义Python函数
 
-![[Pasted image 20250310153345.png]]
+![MaxKB自定义Python函数](./images/Pasted%20image%2020250310153345.png)
 
 ## FastGPT & RagFlow
 
@@ -97,4 +97,4 @@ MaxKB包含工作过程编排功能，不同于以上所介绍的简单Agent编�
 
 RagFlow的功能相对要简陋一点，开发程度不如FastGPT和MaxKB。
 
-![[Pasted image 20250310154949.png]]
+![FastGPT界面](./images/Pasted%20image%2020250310154949.png)
